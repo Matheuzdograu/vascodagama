@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://okbulkonx2d1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xat2r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qgkw"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xat2r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8qgkw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
